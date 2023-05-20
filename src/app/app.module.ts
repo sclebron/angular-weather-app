@@ -17,4 +17,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+const routes: Routes = [
+  {
+    path: "",
+    component: WeatherReportComponent,
+  },
+  {
+    path: ":locationName",
+    component: WeatherReportComponent,
+  },
+];
 export class AppModule { }
