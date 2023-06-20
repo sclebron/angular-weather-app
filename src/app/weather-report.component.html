@@ -1,0 +1,13 @@
+<mat-card class="mat-elevation-25" *ngIf="data$ | async as data">
+    <mat-progress-bar *ngIf="loading" mode="indeterminate" class="top-bar">
+    </mat-progress-bar>
+    <mat-card-header>
+        <mat-card-title>{{data.name}}'s Weather</mat-card-title>
+        <mat-card-subtitle>Today: {{today | data}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="flex-row">
+            
+        </div>
+    </mat-card-content>
+</mat-card>
